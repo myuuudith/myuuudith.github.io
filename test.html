@@ -1,0 +1,693 @@
+    <!DOCTYPE html>
+<html>
+  <head>
+    <title>NEXTFLEX - dita</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Font Family Work Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Family Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    
+
+    <style>
+      body {
+        font-family: 'Work Sans', sans-serif;
+        background-color: black;
+      }
+      
+      .card-title{
+        color: white;
+      }
+
+      .container-fluid{
+            background-color: black;
+            
+        }
+
+        .color-red{
+            color: red;
+        }
+
+      .signin-container {
+        padding: 48px 24px;
+        width: 400px;
+
+        background: #000;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+        border: 1px solid black;
+        border-radius: 8px;
+      }
+
+     .media-container{
+        padding: 52px 18px;
+    width: 950px;
+    background: black;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 25%);
+    border: 1px solid;
+    border-radius: 23px;
+      } 
+
+      .signin-title {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 29px;
+        color: red;
+        margin-bottom: 41px;
+      }
+
+      .input-email {
+        padding: 13px 20px;
+        width: 352px;
+        height: 45px;
+
+        background: #ffffff;
+        border: 1.5px solid #000032;
+        border-radius: 8px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #b3b3b3;
+      }
+
+      .form-check-label{
+        color:aliceblue
+      }
+
+
+      .mb-12 {
+        margin-bottom: 12px;
+      }
+
+      .mb-24 {
+        margin-bottom: 24px;
+      }
+
+      .signin-btn {
+        padding: 16px 24px;
+        width: 352px;
+        height: 54px;
+        border-radius: 8px;
+      }
+
+      .signup-btn {
+        width: 352px;
+        height: 35px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+
+        /* Brand/Orange/Orange - #F6A973 */
+        color: #f6a973;
+      }
+
+      .sosmed-btn {
+        padding: 0px 12px;
+        width: 352px;
+        height: 40px;
+        background: #f2f2f2;
+        border-radius: 4px;
+      }
+
+      .navbar-brand {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 49px;
+      }
+
+      .navbar{
+        top: -1%;
+      }
+
+      .card-img-top{
+        max-width: 100%;
+        border-radius: 11px;
+      }
+
+      .search-input {
+        border-right: none;
+        border-top-left-radius: 24px;
+        border-bottom-left-radius: 24px;
+      }
+
+      .search-btn {
+        /* background-color: #fff; */
+        border-left: none;
+        border-top-right-radius: 24px;
+        border-bottom-right-radius: 24px;
+      }
+
+      .bi-search{
+            color: white;
+            position: absolute;
+            left: 69%;            
+            top: 18%;        
+        }
+
+        .bi-bell{
+            color: white;
+            position: relative;
+            top: 18%;
+            
+        }
+
+        .bi-person-circle{
+            color: white;
+            position: relative;
+        }
+
+        .search-input{
+            right: 14%;
+        }
+
+        p{
+          color:#ffffff
+        }
+        
+        .feedback-form{
+          min-height: 100vh;
+          display: flex;
+          justify-content:baseline;
+          align-items:flex-end;
+        }
+
+        .contact-info, .contact-us{
+          color:#f2f2f2
+        }
+
+        .alert{
+          width: 36%;
+          align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    right: -31%
+        }
+        
+
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="test.html">
+          <span class="color-red">NEXTFLEX</span>
+          </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          style="justify-content: space-around"
+        >
+
+<!--breadcrumbs-->
+        <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="test.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a href="page2.html">Library</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a href="page3.html">TV Shows</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a href="page4.html">Movies</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a href="page7.html">Contact Us</a></li>
+            </ol>
+        </nav>
+            
+<!-- Button trigger modal -->
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <input
+                class="form-control search-input"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <i class="bi bi-search"></i>
+            
+              <i class="bi bi-bell"></i>
+              
+              <button
+              class="btn"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#modalChomerce">
+            <i class="bi bi-person-circle"></i>
+            </button>
+          
+        </div>
+      </div>
+    </nav>
+
+<!-- Cards -->
+      <div class="card bg-dark text-white">
+        <img src="https://preview.redd.it/amom7gliy2t81.png?auto=webp&s=2c362816af1435fa054fe528352b8a662bbd4bad" class="card-img" alt="SPY X Family Netflix" width="280px" height="700px">
+        <div class="card-img-overlay">
+          <h5 class="card-title">SPY X Family</h5>
+          <p class="card-text">Watch SPY X Family Right now on NEXTFLEX</p>
+        </div>
+      </div>
+
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <h4 class="alert-heading">Please remove your adBlock!</h4>
+        <button type="button" class="btn-close" aria-label="Close"></button>
+      </div>
+
+      <div class="row" style="margin: 36px 10vw">
+        <div class="col-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://thumb.milzeru.com/media/frontend/infografik/2019/09/24/5d89bf49eea99dc-cover-lmkhlh54bt5ga5ie76c2hod367-20180101150520-medi.jpg"
+              class="card-img-top"
+              alt="Friends Netflix Show"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Friends</h5>
+              <button
+              class="btn"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#Videopop">
+              <a class="btn btn-outline-light">Click here to watch</a>
+            </button></div>
+          </div>
+        </div>
+
+        <div class="col-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://jurnalisindonesia.id/uploads/large/52b90aea400a5040e4ee35de3d98c661.jpg"
+              class="card-img-top"
+              alt="Little Woman Korean Netflix Show"
+            /> 
+            <div class="card-body">
+              <h5 class="card-title">Little Woman</h5>
+              <button
+              class="btn"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#Korea">
+              <a class="btn btn-outline-light">Click here to watch</a>
+            </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://privacytable.com/wp-content/uploads/2022/06/Little-Women-on-Netflix.webp"
+              class="card-img-top"
+              alt="Little Woman Nteflix Show"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Little Woman</h5>
+              <a href="#" class="btn btn-outline-light">Click here to watch</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://www.mainmain.id/uploads/post/2020/04/16/haikyuu.jpg"
+              class="card-img-top"
+              alt="Haikyu"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Haikyu</h5>
+              <button
+              class="btn"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#Haikyuu">
+              <a class="btn btn-outline-light">Click here to watch</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row" style="margin: 36px 10vw">
+        <div class="col-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://wallpapercave.com/wp/wp5933998.jpg"
+              class="card-img-top"
+              alt="Ozark"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ozark</h5>
+              <a href="#" class="btn btn-outline-light">Click here to watch</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://assets.change.org/photos/0/kt/jn/cQKTJNKBXunzgwo-1600x900-noPad.jpg?1526033355"
+              class="card-img-top"
+              alt="Brooklyn 99 Netflix Show"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Brooklyn 99</h5>
+              <a href="#" class="btn btn-outline-light">Click here to watch</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://cdn-2.tstatic.net/wow/foto/bank/images/cover-film-pengabdi-setan_20171015_120935.jpg"
+              class="card-img-top"
+              alt="Pengabdi Setan Netflix Show"
+            />
+            <div class="card-body">
+                <h5 class="card-title">Pengabdi Setan</h5>
+                <a href="#" class="btn btn-outline-light">Click here to watch</a>
+              </div>
+            </div>
+        </div>
+            <div class="col-3">
+                <div class="card bg-transparent" style="border: none" color="transparent" >
+                  <img
+                    src="https://www.streamwijzer.be/wp-content/uploads/2021/05/Joker-Netflix-film-2019-1068x560.jpeg"
+                    class="card-img-top"
+                    alt="Joker Netflix Show"
+                  />
+                  <div class="card-body">
+                      <h5 class="card-title">Joker</h5>
+                      <a href="#" class="btn btn-outline-light">Click here to watch</a>
+                    </div>
+                  </div>
+                </div>
+      
+        <div class="col-lg-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://cdn-brilio-net.akamaized.net/community/2019/06/18/19928/image_1560524367_5d03b64f05ca2.jpg"
+              class="card-img-top"
+              alt="Lucifer Netflix Show"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lucifer</h5>
+              <a href="#" class="btn btn-outline-light">Click here to watch</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://w0.peakpx.com/wallpaper/908/411/HD-wallpaper-ted-2-06-movie-30-2015.jpg"
+              class="card-img-top"
+              alt="Ted 2 Netflix Show"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ted 2</h5>
+              <a href="#" class="btn btn-outline-light">Click here to watch</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://wallpapercave.com/wp/wp9424755.jpg"
+              class="card-img-top"
+              alt="Avatar"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Avatar</h5>
+              <a href="#" class="btn btn-outline-light">Click here to watch</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+            <img
+              src="https://lightbox-prod.imgix.net/images/assets/100139707-p12465613_v_h10_aa.jpg"
+              class="card-img-top"
+              alt="Sully Netflix Show"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sully</h5>
+              <a href="#" class="btn btn-outline-light">Click here to watch</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+              <img
+                src="https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2022/09/15/2333549946.jpeg"
+                class="card-img-top"
+                alt="Ngeri-ngeri Sedap"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ngeri-ngeri Sedap</h5>
+                <a href="#" class="btn btn-outline-light">Click here to watch</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+              <img
+                src="https://pbs.twimg.com/media/DrtTeRNVsAEKRxh.jpg"
+                class="card-img-top"
+                alt="Girl From Nowhere Netflix Show"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Girl From Nowhere</h5>
+                <a href="#" class="btn btn-outline-light">Click here to watch</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+              <img
+                src="https://images3.alphacoders.com/115/1158528.jpg"
+                class="card-img-top"
+                alt="Knife out"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Knife Out</h5>
+                <a href="#" class="btn btn-outline-light">Click here to watch</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="card bg-transparent" style="border: none" color="transparent">
+                 <img
+                src="https://occ.a.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABb4XP2msE9wsFK_q5rhqAj_omP_b8eTI5_lf3m_F6TxDKs5lJ3XfIXPoOH7lUi49V73nVjl2kI27qUUJ9TTeESrDqmXp94Nu-e4y.jpg?r=374"
+                class="card-img-top"
+                alt="Mean Girls"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mean Girls</h5>
+                <a href="#" class="btn btn-outline-light">Click here to watch</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modalChomerce"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content" style="background: none; border: none;">
+          <div class="modal-body">
+
+            <!-- Sign In Area -->
+            <div class="signin-container">
+              <div style="display:flex; justify-content:space-between;">
+                <div class="signin-title">Account</div>
+                <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                style="position: relative;
+                bottom: 35px;
+                left: 15px;"
+              ></button>
+              </div>
+              <div class="mb-24">
+                <input
+                  class="input-email"
+                  type="text"
+                  placeholder="Enter nickname or Email"
+                />
+              </div>
+              <div
+                class="form-check form-switch mb-24"
+                style="display: flex; justify-content: center"
+              >
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                />
+                <label
+                  class="form-check-label"
+                  for="flexSwitchCheckDefault"
+                  style="padding-left: 10px"
+                  >Keep me Signed in</label
+                >
+            </div>
+              <button type="button" class="btn btn-secondary signin-btn mb-24">
+                Sign in
+              </button>
+              
+              <button type="button" class="btn btn-light signup-btn mb-24">
+                Sign up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--modal film-->
+    <div
+      class="modal fade friends"
+      id="Videopop"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+    <div class="modal-dialog">
+        <div class="media-content" style="background: none; border: none;">
+          <div class="media-body">
+            
+            <div class="media-container">
+              <div style="display:flex; justify-content:space-between;">
+                <div class="media-title">Friends</div>
+                <img
+              src="https://thumb.milzeru.com/media/frontend/infografik/2019/09/24/5d89bf49eea99dc-cover-lmkhlh54bt5ga5ie76c2hod367-20180101150520-medi.jpg"
+              class="media"
+              alt="Friends Netflix Show" />
+                <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                style="position: relative;
+                bottom: 35px;
+                left: 15px;"
+              ></button>
+              <p>This is friends</p>
+              </div>
+            </div>
+        </div>
+   </div>
+    </div>
+
+ <!--modal little kr-->
+ <div
+      class="modal fade Littlekorean"
+      id="Korea"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+    <div class="modal-dialog">
+        <div class="media-content" style="background: none; border: none;">
+          <div class="media-body">
+            
+            <div class="media-container">
+              <div style="display:flex; justify-content:space-between;">
+                <div class="media-title">Little Woman Korean</div>
+                <img
+              src="https://jurnalisindonesia.id/uploads/large/52b90aea400a5040e4ee35de3d98c661.jpg"
+              class="media"
+              alt="Little Woman Korean Netflix Show" />
+                <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                style="position: relative;
+                bottom: 35px;
+                left: 15px;"
+              ></button>
+              <p>This is Littel Woman Korean Nteflix Show</p>
+              </div>
+            </div>
+        </div>
+   </div>
+    </div>
+
+
+      <div class="feedback-form">
+        <div class="contact-sec">
+          <div class="contact-info">
+            <div><i class="bi bi-geo-alt"></i> Address
+            <p>London Bridge, Jakarta, Australia</p></div>
+            <div><i class="bi bi-inbox"></i> Mail</div>
+            <p>Londontrilia@feedback.com</p>
+            <div><i class="bi bi-telephone-forward-fill"></i> Phone
+            <p>+01 092 9283661</p></div>
+          </div>
+          </div>
+        
+          <div class="contact-form">
+            <h2 class="contact-us">Contact Us</h2>
+            <form class="contact" action="" method="post"></form>
+            <input type="text" name="name" class="text-box" placeholder="Your name" required>
+            <input type="email" name="email" class="text-box" placeholder="Your Email" required><br>
+          <textarea name="Message" rows="5" cols="80" placeholder="Input Your Feedback" required></textarea><br>
+          <input type="submit"  name="submit" class="send-btn" value="send">
+          </div>
+        
+        </div>
+        </div>
+      </body>
+  </body>
+</html>
